@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Center — HelpHub AI</title>
+  <link rel="stylesheet" href="../shared/global.css" />
+  <link rel="stylesheet" href="../shared/navbar.css" />
+  <link rel="stylesheet" href="../shared/footer.css" />
+  <link rel="stylesheet" href="ai.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card-dark page-hero">
+      <span class="eyebrow light">AI CENTER</span>
+      <h1 class="display dark-h1">See what the platform intelligence is noticing.</h1>
+      <p class="dark-lead">AI-like insights summarize demand trends, helper readiness, urgency signals, and request recommendations.</p>
+    </section>
+
+    <section class="insight-grid">
+      <div class="card insight">
+        <span class="eyebrow">TREND PULSE</span>
+        <h2 class="big" id="trendCat">Web Development</h2>
+        <p class="muted">Most common support area based on active community requests.</p>
+      </div>
+      <div class="card insight">
+        <span class="eyebrow">URGENCY WATCH</span>
+        <h2 class="big" id="urgentCount">0</h2>
+        <p class="muted">Requests currently flagged high priority by the urgency detector.</p>
+      </div>
+      <div class="card insight">
+        <span class="eyebrow">MENTOR POOL</span>
+        <h2 class="big" id="mentorCount">0</h2>
+        <p class="muted">Trusted helpers with strong response history and contribution signals.</p>
+      </div>
+    </section>
+
+    <section class="card recs">
+      <span class="eyebrow">AI RECOMMENDATIONS</span>
+      <h2 class="section-title">Requests needing attention</h2>
+      <div id="recList" class="rec-list"></div>
+    </section>
+
+    <section class="skills-grid">
+      <div class="card">
+        <span class="eyebrow">MOST REQUESTED SKILLS</span>
+        <div id="skillTags" class="tag-cloud"></div>
+      </div>
+      <div class="card">
+        <span class="eyebrow">RECOMMENDED SKILLS TO LEARN</span>
+        <div class="tag-cloud">
+          <span class="tag">React</span><span class="tag">TypeScript</span>
+          <span class="tag">Figma Auto Layout</span><span class="tag">Pandas</span>
+          <span class="tag">Interview Prep</span><span class="tag">Responsive CSS</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../shared/store.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>

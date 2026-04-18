@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leaderboard — HelpHub AI</title>
+  <link rel="stylesheet" href="../shared/global.css" />
+  <link rel="stylesheet" href="../shared/navbar.css" />
+  <link rel="stylesheet" href="../shared/footer.css" />
+  <link rel="stylesheet" href="leaderboard.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card-dark page-hero">
+      <span class="eyebrow light">LEADERBOARD</span>
+      <h1 class="display dark-h1">Recognize the people who keep the community moving.</h1>
+      <p class="dark-lead">Trust score, contribution count, and badges create visible momentum for reliable helpers.</p>
+    </section>
+
+    <section class="lb-grid">
+      <div class="card lb-col">
+        <span class="eyebrow">TOP HELPERS</span>
+        <h2 class="section-title">Rankings</h2>
+        <div id="rankList" class="rank-list"></div>
+      </div>
+      <div class="card lb-col">
+        <span class="eyebrow">BADGE SYSTEM</span>
+        <h2 class="section-title">Trust and achievement</h2>
+        <div id="badgeList" class="badge-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../shared/store.js"></script>
+  <script src="leaderboard.js"></script>
+</body>
+</html>

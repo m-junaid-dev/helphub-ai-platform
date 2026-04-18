@@ -1,0 +1,39 @@
+.page-hero { margin-top: 32px; padding: 48px; display: flex; flex-direction: column; gap: 16px; }
+.dark-h1 { color: #fff; max-width: 22ch; }
+.dark-lead { color: #C4D6D4; max-width: 64ch; }
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 32px 0;
+}
+.insight { background: #FFFDF8; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+.big { font-size: 38px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
+
+.recs { background: #FFFDF8; padding: 32px; display: flex; flex-direction: column; gap: 18px; }
+.rec-list { display: flex; flex-direction: column; gap: 14px; }
+.rec-row {
+  background: #F4F1EA;
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.rec-row strong { font-size: 15px; }
+.rec-row p { font-size: 13px; color: var(--text-muted); }
+.rec-row .req-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 24px 0 64px;
+}
+.skills-grid .card { background: #FFFDF8; display: flex; flex-direction: column; gap: 14px; }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+
+@media (max-width: 900px) {
+  .insight-grid, .skills-grid { grid-template-columns: 1fr; }
+}

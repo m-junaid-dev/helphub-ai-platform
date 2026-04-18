@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore — HelpHub AI</title>
+  <link rel="stylesheet" href="../shared/global.css" />
+  <link rel="stylesheet" href="../shared/navbar.css" />
+  <link rel="stylesheet" href="../shared/footer.css" />
+  <link rel="stylesheet" href="explore.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card-dark page-hero">
+      <span class="eyebrow light">EXPLORE / FEED</span>
+      <h1 class="display dark-h1">Browse help requests with filterable community context.</h1>
+      <p class="dark-lead">Filter by category, urgency, skills, and location to surface the best matches.</p>
+    </section>
+
+    <section class="explore-grid">
+      <aside class="card filters">
+        <span class="eyebrow">FILTERS</span>
+        <h2 class="section-title">Refine the feed</h2>
+
+        <label class="field">
+          <span>Category</span>
+          <select id="fCategory">
+            <option value="">All categories</option>
+            <option>Web Development</option>
+            <option>Design</option>
+            <option>Career</option>
+            <option>Data</option>
+            <option>Community</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Urgency</span>
+          <select id="fUrgency">
+            <option value="">All urgency levels</option>
+            <option>High</option><option>Medium</option><option>Low</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Skills</span>
+          <input id="fSkills" placeholder="React, Figma, Git/GitHub" />
+        </label>
+
+        <label class="field">
+          <span>Location</span>
+          <input id="fLocation" placeholder="Karachi, Lahore, Remote" />
+        </label>
+
+        <div class="filter-actions">
+          <button id="applyFilters" class="btn btn-primary">Apply filters</button>
+          <button id="resetFilters" class="btn btn-ghost">Reset</button>
+        </div>
+
+        <hr class="divider" />
+
+        <span class="eyebrow">QUICK POST</span>
+        <h3 class="card-title">Create a request</h3>
+        <input id="qTitle" class="qinput" placeholder="Short title (e.g. Need React help)" />
+        <textarea id="qDesc" class="qinput" rows="3" placeholder="Describe the challenge, deadline, and what kind of help you need."></textarea>
+        <button id="qSubmit" class="btn btn-primary" style="width:100%">Publish request</button>
+        <div id="qHint" class="qhint"></div>
+      </aside>
+
+      <div id="reqList" class="req-list"></div>
+    </section>
+  </main>
+
+  <script src="../shared/store.js"></script>
+  <script src="explore.js"></script>
+</body>
+</html>

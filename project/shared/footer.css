@@ -1,0 +1,3 @@
+/* Footer-only extras (kept minimal — main footer styles are in global.css) */
+.site-footer a { color: var(--primary); font-weight: 600; }
+.site-footer a:hover { text-decoration: underline; }
